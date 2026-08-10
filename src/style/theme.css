@@ -1,0 +1,665 @@
+:root {
+    --font-size: 16px;
+
+    /* =========================================================
+       TRACKANDFIND — CORE BRAND
+       ========================================================= */
+
+    --background: #080B0F;
+    --foreground: #F5F5F7;
+
+    --charcoal-black: #080B0F;
+    --deep-charcoal: #0B0E13;
+    --soft-charcoal: #11151B;
+    --elevated-charcoal: #171B22;
+    --charcoal-hover: #1C2129;
+
+    --electric-purple: #8B5CF6;
+    --bright-purple: #A855F7;
+    --deep-purple: #6D28D9;
+    --purple-dark: #4C1D95;
+    --purple-soft: rgba(139, 92, 246, 0.12);
+    --purple-glow: rgba(139, 92, 246, 0.18);
+
+    --off-white: #F5F5F7;
+    --cool-gray: #A1A1AA;
+    --muted-gray: #71717A;
+    --border-gray: #252A33;
+
+    /* =========================================================
+       STATUS COLORS
+       ========================================================= */
+
+    --success: #22C55E;
+    --success-soft: rgba(34, 197, 94, 0.12);
+
+    --danger: #EF4444;
+    --danger-soft: rgba(239, 68, 68, 0.12);
+
+    --warning: #F59E0B;
+    --warning-soft: rgba(245, 158, 11, 0.12);
+
+    --info: #3B82F6;
+    --info-soft: rgba(59, 130, 246, 0.12);
+
+    --saved: #EC4899;
+    --saved-soft: rgba(236, 72, 153, 0.12);
+
+    /* =========================================================
+       SEMANTIC UI COLORS
+       ========================================================= */
+
+    --card: #11151B;
+    --card-foreground: #F5F5F7;
+
+    --popover: #171B22;
+    --popover-foreground: #F5F5F7;
+
+    --primary: #8B5CF6;
+    --primary-foreground: #FFFFFF;
+
+    --secondary: #171B22;
+    --secondary-foreground: #F5F5F7;
+
+    --muted: #171B22;
+    --muted-foreground: #71717A;
+
+    --accent: rgba(139, 92, 246, 0.12);
+    --accent-foreground: #A855F7;
+
+    --destructive: #EF4444;
+    --destructive-foreground: #FFFFFF;
+
+    --border: #252A33;
+
+    --input: #171B22;
+    --input-background: #11151B;
+
+    --switch-background: #252A33;
+
+    --ring: #8B5CF6;
+
+    /* =========================================================
+       JOB / APPLICATION STATUS
+       ========================================================= */
+
+    --status-unswiped: #8B5CF6;
+    --status-saved: #EC4899;
+    --status-applied: #8B5CF6;
+    --status-interview: #3B82F6;
+    --status-assessment: #F59E0B;
+    --status-offer: #22C55E;
+    --status-rejected: #EF4444;
+    --status-archived: #71717A;
+
+    /* =========================================================
+       SWIPE ACTIONS
+       ========================================================= */
+
+    --swipe-pass: #EF4444;
+    --swipe-pass-background: rgba(239, 68, 68, 0.12);
+
+    --swipe-maybe: #A1A1AA;
+    --swipe-maybe-background: rgba(161, 161, 170, 0.10);
+
+    --swipe-interested: #22C55E;
+    --swipe-interested-background: rgba(34, 197, 94, 0.12);
+
+    /* =========================================================
+       CHARTS
+       ========================================================= */
+
+    --chart-1: #8B5CF6;
+    --chart-2: #3B82F6;
+    --chart-3: #22C55E;
+    --chart-4: #F59E0B;
+    --chart-5: #EC4899;
+
+    /* =========================================================
+       SIDEBAR
+       ========================================================= */
+
+    --sidebar: #0B0E13;
+    --sidebar-foreground: #A1A1AA;
+
+    --sidebar-primary: #8B5CF6;
+    --sidebar-primary-foreground: #FFFFFF;
+
+    --sidebar-accent: rgba(139, 92, 246, 0.12);
+    --sidebar-accent-foreground: #F5F5F7;
+
+    --sidebar-border: #1A1F27;
+    --sidebar-ring: #8B5CF6;
+
+    /* =========================================================
+       FONT WEIGHTS
+       ========================================================= */
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* =========================================================
+       BORDER RADIUS
+       ========================================================= */
+
+    --radius: 0.75rem;
+}
+
+
+/* =============================================================
+   TAILWIND THEME TOKENS
+   ============================================================= */
+
+@theme inline {
+
+    /* Main UI */
+
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+
+    --color-destructive: var(--destructive);
+    --color-destructive-foreground: var(--destructive-foreground);
+
+    --color-border: var(--border);
+
+    --color-input: var(--input);
+    --color-input-background: var(--input-background);
+
+    --color-switch-background: var(--switch-background);
+
+    --color-ring: var(--ring);
+
+
+    /* =========================================================
+       TRACKANDFIND BRAND COLORS
+       ========================================================= */
+
+    --color-charcoal-black: var(--charcoal-black);
+    --color-deep-charcoal: var(--deep-charcoal);
+    --color-soft-charcoal: var(--soft-charcoal);
+    --color-elevated-charcoal: var(--elevated-charcoal);
+    --color-charcoal-hover: var(--charcoal-hover);
+
+    --color-electric-purple: var(--electric-purple);
+    --color-bright-purple: var(--bright-purple);
+    --color-deep-purple: var(--deep-purple);
+    --color-purple-dark: var(--purple-dark);
+    --color-purple-soft: var(--purple-soft);
+
+    --color-off-white: var(--off-white);
+    --color-cool-gray: var(--cool-gray);
+    --color-muted-gray: var(--muted-gray);
+    --color-border-gray: var(--border-gray);
+
+
+    /* Status */
+
+    --color-success: var(--success);
+    --color-danger: var(--danger);
+    --color-warning: var(--warning);
+    --color-info: var(--info);
+    --color-saved: var(--saved);
+
+
+    /* Swipe */
+
+    --color-swipe-pass: var(--swipe-pass);
+    --color-swipe-maybe: var(--swipe-maybe);
+    --color-swipe-interested: var(--swipe-interested);
+
+
+    /* Charts */
+
+    --color-chart-1: var(--chart-1);
+    --color-chart-2: var(--chart-2);
+    --color-chart-3: var(--chart-3);
+    --color-chart-4: var(--chart-4);
+    --color-chart-5: var(--chart-5);
+
+
+    /* Sidebar */
+
+    --color-sidebar: var(--sidebar);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-primary-foreground:
+            var(--sidebar-primary-foreground);
+
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-accent-foreground:
+            var(--sidebar-accent-foreground);
+
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-ring: var(--sidebar-ring);
+
+
+    /* =========================================================
+       RADIUS
+       ========================================================= */
+
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) + 4px);
+    --radius-2xl: calc(var(--radius) + 8px);
+
+
+    /* =========================================================
+       TRACKANDFIND FONTS
+       ========================================================= */
+
+    --font-logo: "Space Grotesk", "Inter", sans-serif;
+    --font-heading: "Inter", sans-serif;
+    --font-body: "Inter", sans-serif;
+}
+
+
+/* =============================================================
+   BASE STYLES
+   ============================================================= */
+
+@layer base {
+
+    * {
+        @apply border-border outline-ring/50;
+    }
+
+    html {
+        font-size: var(--font-size);
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        font-family: var(--font-body);
+        font-weight: var(--font-weight-normal);
+    }
+
+
+    /* =========================================================
+       TYPOGRAPHY
+       ========================================================= */
+
+    h1 {
+        font-family: var(--font-heading);
+        font-size: 2rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 1.2;
+        letter-spacing: -0.025em;
+    }
+
+    h2 {
+        font-family: var(--font-heading);
+        font-size: 1.5rem;
+        font-weight: var(--font-weight-semibold);
+        line-height: 1.3;
+        letter-spacing: -0.02em;
+    }
+
+    h3 {
+        font-family: var(--font-heading);
+        font-size: 1.125rem;
+        font-weight: var(--font-weight-semibold);
+        line-height: 1.4;
+    }
+
+    h4 {
+        font-family: var(--font-heading);
+        font-size: 1rem;
+        font-weight: var(--font-weight-medium);
+        line-height: 1.4;
+    }
+
+    p {
+        font-family: var(--font-body);
+        font-weight: var(--font-weight-normal);
+        line-height: 1.6;
+    }
+
+    label {
+        font-family: var(--font-body);
+        font-size: 0.875rem;
+        font-weight: var(--font-weight-medium);
+    }
+
+    button {
+        font-family: var(--font-body);
+        font-size: 0.875rem;
+        font-weight: var(--font-weight-medium);
+    }
+
+    input,
+    textarea,
+    select {
+        font-family: var(--font-body);
+        font-size: 0.875rem;
+        font-weight: var(--font-weight-normal);
+    }
+}
+
+
+/* =============================================================
+   TRACKANDFIND COMPONENT ASSETS
+   ============================================================= */
+
+@layer components {
+
+    /* Main Dashboard / Content Card */
+
+    .track-card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+    }
+
+
+    /* Elevated Card */
+
+    .track-card-elevated {
+        background: var(--elevated-charcoal);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.22);
+    }
+
+
+    /* AI / Active Card */
+
+    .track-card-ai {
+        background:
+                linear-gradient(
+                        135deg,
+                        rgba(139, 92, 246, 0.08),
+                        rgba(17, 21, 27, 1) 45%
+                );
+
+        border: 1px solid rgba(139, 92, 246, 0.35);
+
+        border-radius: var(--radius);
+
+        box-shadow:
+                0 0 30px var(--purple-glow);
+    }
+
+
+    /* =========================================================
+       BUTTONS
+       ========================================================= */
+
+    .btn-primary {
+        background: var(--electric-purple);
+        color: white;
+
+        border-radius: 0.625rem;
+
+        padding: 0.625rem 1rem;
+
+        transition:
+                background 150ms ease,
+                transform 150ms ease,
+                box-shadow 150ms ease;
+    }
+
+    .btn-primary:hover {
+        background: var(--bright-purple);
+
+        box-shadow:
+                0 0 20px rgba(139, 92, 246, 0.28);
+
+        transform: translateY(-1px);
+    }
+
+
+    .btn-secondary {
+        background: var(--elevated-charcoal);
+        color: var(--foreground);
+
+        border: 1px solid var(--border);
+
+        border-radius: 0.625rem;
+
+        padding: 0.625rem 1rem;
+
+        transition:
+                background 150ms ease,
+                border-color 150ms ease;
+    }
+
+    .btn-secondary:hover {
+        background: var(--charcoal-hover);
+        border-color: #343A46;
+    }
+
+
+    .btn-ghost {
+        background: transparent;
+        color: var(--cool-gray);
+
+        border-radius: 0.625rem;
+
+        padding: 0.625rem 1rem;
+    }
+
+    .btn-ghost:hover {
+        background: var(--purple-soft);
+        color: var(--bright-purple);
+    }
+
+
+    /* =========================================================
+       SWIPE BUTTONS
+       ========================================================= */
+
+    .btn-pass {
+        background: var(--swipe-pass-background);
+        color: var(--swipe-pass);
+
+        border: 1px solid rgba(239, 68, 68, 0.25);
+
+        border-radius: 9999px;
+    }
+
+    .btn-pass:hover {
+        background: var(--swipe-pass);
+        color: white;
+    }
+
+
+    .btn-maybe {
+        background: var(--swipe-maybe-background);
+        color: var(--swipe-maybe);
+
+        border: 1px solid var(--border);
+
+        border-radius: 9999px;
+    }
+
+    .btn-maybe:hover {
+        background: var(--charcoal-hover);
+        color: white;
+    }
+
+
+    .btn-interested {
+        background: var(--swipe-interested-background);
+        color: var(--swipe-interested);
+
+        border: 1px solid rgba(34, 197, 94, 0.25);
+
+        border-radius: 9999px;
+    }
+
+    .btn-interested:hover {
+        background: var(--swipe-interested);
+        color: white;
+    }
+
+
+    /* =========================================================
+       INPUTS
+       ========================================================= */
+
+    .track-input {
+        background: var(--input-background);
+        color: var(--foreground);
+
+        border: 1px solid var(--border);
+
+        border-radius: 0.625rem;
+
+        padding: 0.625rem 0.875rem;
+
+        transition:
+                border-color 150ms ease,
+                box-shadow 150ms ease;
+    }
+
+    .track-input::placeholder {
+        color: var(--muted-gray);
+    }
+
+    .track-input:focus {
+        border-color: var(--electric-purple);
+
+        box-shadow:
+                0 0 0 3px rgba(139, 92, 246, 0.12);
+
+        outline: none;
+    }
+
+
+    /* =========================================================
+       SIDEBAR
+       ========================================================= */
+
+    .sidebar-item {
+        color: var(--sidebar-foreground);
+
+        border-radius: 0.625rem;
+
+        transition:
+                color 150ms ease,
+                background 150ms ease;
+    }
+
+    .sidebar-item:hover {
+        color: var(--foreground);
+        background: rgba(255, 255, 255, 0.035);
+    }
+
+    .sidebar-item-active {
+        color: var(--foreground);
+
+        background:
+                linear-gradient(
+                        90deg,
+                        rgba(139, 92, 246, 0.18),
+                        rgba(139, 92, 246, 0.06)
+                );
+    }
+
+    .sidebar-item-active svg {
+        color: var(--electric-purple);
+    }
+
+
+    /* =========================================================
+       BADGES
+       ========================================================= */
+
+    .badge-purple {
+        color: var(--bright-purple);
+        background: var(--purple-soft);
+
+        border: 1px solid rgba(139, 92, 246, 0.18);
+
+        border-radius: 9999px;
+    }
+
+    .badge-success {
+        color: var(--success);
+        background: var(--success-soft);
+
+        border-radius: 9999px;
+    }
+
+    .badge-warning {
+        color: var(--warning);
+        background: var(--warning-soft);
+
+        border-radius: 9999px;
+    }
+
+    .badge-info {
+        color: var(--info);
+        background: var(--info-soft);
+
+        border-radius: 9999px;
+    }
+
+    .badge-danger {
+        color: var(--danger);
+        background: var(--danger-soft);
+
+        border-radius: 9999px;
+    }
+
+
+    /* =========================================================
+       JOB CARD
+       ========================================================= */
+
+    .job-card {
+        background:
+                linear-gradient(
+                        145deg,
+                        #171B22 0%,
+                        #11151B 100%
+                );
+
+        border:
+                1px solid rgba(139, 92, 246, 0.28);
+
+        border-radius: 1.25rem;
+
+        box-shadow:
+                0 20px 50px rgba(0, 0, 0, 0.35),
+                0 0 35px rgba(139, 92, 246, 0.07);
+    }
+
+
+    /* =========================================================
+       LOGO
+       ========================================================= */
+
+    .track-logo {
+        font-family: var(--font-logo);
+        font-weight: 700;
+        letter-spacing: -0.04em;
+    }
+
+    .track-logo-accent {
+        color: var(--electric-purple);
+    }
+}

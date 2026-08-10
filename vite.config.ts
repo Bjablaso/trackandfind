@@ -9,6 +9,7 @@ export default defineConfig({
   plugins: [
       react(),
     tailwindcss(),
+    require("tw-animate-css"),
       svgr
   ],
   resolve: {
