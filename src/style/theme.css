@@ -219,6 +219,7 @@
     --color-warning: var(--warning);
     --color-info: var(--info);
     --color-saved: var(--saved);
+   /*/// --color-rejected: var(--rejected);*/
 
 
     /* Swipe */
@@ -252,6 +253,25 @@
 
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-ring: var(--sidebar-ring);
+
+    /*Application status */
+    --color-unswiped:var(--status-unswiped) ;
+    /*--color-savedx: var(--status-saved);*/
+   --color-applied: var(--status-applied) ;
+    --color-interview: var(--status-interview);
+    --color-assessment: var(--status-assessment);
+    --color-offer: var(--status-offer);
+    --color-rejected: var(--status-rejected);
+    --color-archived: var(--status-archived);
+
+    /* Application Status Backgrounds */
+
+    --status-applied-background: rgba(139, 92, 246, 0.12);
+    --status-interview-background: rgba(59, 130, 246, 0.12);
+    --status-assessment-background: rgba(245, 158, 11, 0.12);
+    --status-offer-background: rgba(34, 197, 94, 0.12);
+    --status-saved-background: rgba(236, 72, 153, 0.12);
+    --status-rejected-background: rgba(239, 68, 68, 0.12);
 
 
     /* =========================================================
@@ -662,4 +682,51 @@
     .track-logo-accent {
         color: var(--electric-purple);
     }
+
+    /* =========================================================
+       Application Action
+       ========================================================= */
+    .application-card-applied {
+        background: var(--status-applied-background);
+        border: 1px solid var(--status-applied);
+    }
+
+    .application-card-interview {
+        background: var(--status-interview-background);
+        border: 1px solid var(--status-interview);
+    }
+
+    .application-card-assessment {
+        background: var(--status-assessment-background);
+        border: 1px solid var(--status-assessment);
+    }
+    /*.application-card-assessment {*/
+    /*    background:*/
+    /*            radial-gradient(*/
+    /*                    circle at 35% 0%,*/
+    /*                    color-mix(in srgb, var(--status-assessment) 20%, transparent) 0%,*/
+    /*                    color-mix(in srgb, var(--status-assessment) 10%, transparent) 35%,*/
+    /*                    transparent 70%*/
+    /*            ),*/
+    /*            var(--card);*/
+
+    /*    border: 1px solid var(--status-assessment);*/
+    /*}*/
+
+    .application-card-offer {
+        background: var(--status-offer-background);
+        border: 1px solid var(--status-offer);
+    }
+
+    .application-card-saved {
+        background: var(--status-saved-background);
+        border: 1px solid var(--status-saved);
+    }
+
+    .application-card-rejected {
+        background: var(--status-rejected-background);
+        border: 1px solid var(--status-rejected);
+    }
+
+
 }

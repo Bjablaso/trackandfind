@@ -1,6 +1,7 @@
 import {NavBar, type NavItemName} from "./component/NavBar.tsx";
 import {type JSX, useState} from "react";
 import {Bell, Search, Sparkles} from "lucide-react";
+import {DashboardLeftContentArea} from "./component/pages/Dashboard.tsx";
 
 
 export const LayoutManager = () => {
@@ -9,8 +10,10 @@ export const LayoutManager = () => {
 
     const PageMap: Record<NavItemName, JSX.Element> = {
         Dashboard: (
-            <div className="grid grid-rows-[75%_25%] lg:grid-cols-[75%_25%] h-full">
-                <div className="flex h-full">Dash Board Here</div>
+            <div className="grid grid-cols-[75%_25%] w-full h-full ">
+                <div className="flex w-full">
+                    <DashboardLeftContentArea/>
+                </div>
                 <div className="flex border-2 border-purple-700 h-full">Dash Board Here</div>
             </div>
         ),
@@ -52,7 +55,7 @@ export const LayoutManager = () => {
             </div>
 
             <div className="basis-[88%] grid grid-rows-[9%_91%]">
-                <div className="flex w-full h-full border-2 border-red-500
+                <div className="flex w-full h-full
                 justify-between px-10 items-center
                 ">
                     <div className="w-4/12 h-5/12 rounded-lg
@@ -113,7 +116,7 @@ export const LayoutManager = () => {
                         </div>
 
 
-                        <div className="p-2 rounded-full bg-warning/30 hover:opacity-70">
+                        <div className="p-2 rounded-full bg-warning/20 hover:opacity-70">
                             <Sparkles  />
                         </div>
 
@@ -131,12 +134,13 @@ export const LayoutManager = () => {
                               absolute
                                     top-8
                                     -right-2
-                                    h-4 w-4
+                                    h-3 w-3
                                     rounded-full
                                     bg-success
                                     flex items-center justify-center
                                     text-[10px] font-bold text-white
                                     shadow-[0_0_6px_var(--purple-glow)]
+                                    hover:opacity-70
                             ">
 
                             </div>
